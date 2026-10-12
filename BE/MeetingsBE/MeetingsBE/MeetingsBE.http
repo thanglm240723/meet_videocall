@@ -1,0 +1,56 @@
+@MeetingsBE_HostAddress = http://localhost:5029
+
+### Đăng ký (thành công trả token giống login; email trùng -> 409)
+POST {{MeetingsBE_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "displayName": "Nguyễn An",
+  "email": "an@congty.vn",
+  "password": "matkhau123"
+}
+
+### Đăng ký mật khẩu yếu -> 400 kèm errors.Password
+POST {{MeetingsBE_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "displayName": "Nguyễn An",
+  "email": "an2@congty.vn",
+  "password": "abc"
+}
+
+### Đăng nhập (sai email hoặc mật khẩu -> 401)
+# @name login
+POST {{MeetingsBE_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "an@congty.vn",
+  "password": "matkhau123"
+}
+
+### Người dùng hiện tại
+GET {{MeetingsBE_HostAddress}}/api/auth/me
+Authorization: Bearer {{login.response.body.accessToken}}
+
+###
+
+### Tạo cuộc họp (trả joinCode; link FE là /meet/{joinCode})
+# @name createMeet
+POST {{MeetingsBE_HostAddress}}/api/meetrooms
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### Xem phòng theo mã, không cấp token Daily (mã sai -> 404)
+GET {{MeetingsBE_HostAddress}}/api/meetrooms/{{createMeet.response.body.joinCode}}
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### Mã không tồn tại -> 404 { message }
+GET {{MeetingsBE_HostAddress}}/api/meetrooms/0000000000000000
+Authorization: Bearer {{login.response.body.accessToken}}
+
+### Vào phòng: lấy meetingToken của Daily
+POST {{MeetingsBE_HostAddress}}/api/meetrooms/{{createMeet.response.body.joinCode}}/join
+Authorization: Bearer {{login.response.body.accessToken}}
+
+###

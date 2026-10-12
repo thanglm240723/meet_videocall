@@ -1,0 +1,539 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Tecapro_Project\\BE\\MeetingsBE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\hubs\\callhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\hubs\\callhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\controllers\\schedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\controllers\\meetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\controllers\\meetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\.env||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\.env||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\hop_off\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\hop_off\\scheduleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\hubs\\callnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\hubs\\callnotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\hubs\\schedulenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\hubs\\schedulenotifier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\iautheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\iautheservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\goi_dien\\callservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\goi_dien\\callservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\goi_dien\\callpresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\goi_dien\\callpresence.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\goi_dien\\calllocks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\goi_dien\\calllocks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\calldailyroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\calldailyroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\call.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\call.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\callmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\callmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\calljoinreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\calljoinreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\calljoinlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\calljoinlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\meeting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\dtos\\updateadmissionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\dtos\\updateadmissionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\phong_hop\\meetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\phong_hop\\meetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\service\\phong_hop\\imeetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\service\\phong_hop\\imeetservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\dtos\\meetroomresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\dtos\\meetroomresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\meetingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\meetingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\models\\meetingdailyroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\models\\meetingdailyroom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|d:\\tecapro_project\\be\\meetingsbe\\meetingsbe\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC51E7E8-6C28-9CD8-C543-58A1EB0816D9}|MeetingsBE\\MeetingsBE.csproj|solutionrelative:meetingsbe\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": ".env",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\.env",
+              "RelativeDocumentMoniker": "MeetingsBE\\.env",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\.env",
+              "RelativeToolTip": "MeetingsBE\\.env",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-10-12T04:31:15.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ScheduleService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\hop_off\\ScheduleService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\hop_off\\ScheduleService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\hop_off\\ScheduleService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\hop_off\\ScheduleService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:26:43.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ScheduleNotifier.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Hubs\\ScheduleNotifier.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Hubs\\ScheduleNotifier.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Hubs\\ScheduleNotifier.cs",
+              "RelativeToolTip": "MeetingsBE\\Hubs\\ScheduleNotifier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:25:57.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CallHub.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Hubs\\CallHub.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Hubs\\CallHub.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Hubs\\CallHub.cs",
+              "RelativeToolTip": "MeetingsBE\\Hubs\\CallHub.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAwwCcAAABYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:15:02.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IAutheService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\IAutheService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\IAutheService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\IAutheService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\IAutheService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:06:18.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\IJwtService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\IJwtService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\IJwtService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T11:17:54.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\JwtService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\JwtService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\JwtService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\JwtService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T11:38:44.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Program.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Program.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Program.cs*",
+              "RelativeToolTip": "MeetingsBE\\Program.cs*",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAF0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T11:15:51.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScheduleController.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Controllers\\ScheduleController.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Controllers\\ScheduleController.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Controllers\\ScheduleController.cs",
+              "RelativeToolTip": "MeetingsBE\\Controllers\\ScheduleController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T17:01:35.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeetController.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Controllers\\MeetController.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Controllers\\MeetController.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Controllers\\MeetController.cs",
+              "RelativeToolTip": "MeetingsBE\\Controllers\\MeetController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T11:18:48.874Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "MeetingsBE\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T17:09:21.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CallService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\goi_dien\\CallService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\goi_dien\\CallService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\goi_dien\\CallService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\goi_dien\\CallService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:19:49.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CallPresence.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\goi_dien\\CallPresence.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\goi_dien\\CallPresence.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\goi_dien\\CallPresence.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\goi_dien\\CallPresence.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:19:15.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CallLocks.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\goi_dien\\CallLocks.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\goi_dien\\CallLocks.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\goi_dien\\CallLocks.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\goi_dien\\CallLocks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:15:30.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Call.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\Call.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\Call.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\Call.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\Call.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T15:55:18.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CallMember.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallMember.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\CallMember.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallMember.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\CallMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:09:11.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CallNotifier.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Hubs\\CallNotifier.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Hubs\\CallNotifier.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Hubs\\CallNotifier.cs",
+              "RelativeToolTip": "MeetingsBE\\Hubs\\CallNotifier.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T17:14:05.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CallJoinReq.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallJoinReq.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\CallJoinReq.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallJoinReq.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\CallJoinReq.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T04:09:07.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\appsettings.json",
+              "RelativeDocumentMoniker": "MeetingsBE\\appsettings.json",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\appsettings.json",
+              "RelativeToolTip": "MeetingsBE\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-12T04:08:51.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Dtos\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Dtos\\LoginRequest.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Dtos\\LoginRequest.cs",
+              "RelativeToolTip": "MeetingsBE\\Dtos\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T10:28:56.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\AuthService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\AuthService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T16:06:34.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CallDailyRoom.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallDailyRoom.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\CallDailyRoom.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallDailyRoom.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\CallDailyRoom.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T15:55:08.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IMeetService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\phong_hop\\IMeetService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\phong_hop\\IMeetService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\phong_hop\\IMeetService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\phong_hop\\IMeetService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T16:34:24.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CallJoinLog.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallJoinLog.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\CallJoinLog.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\CallJoinLog.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\CallJoinLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T15:55:04.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MeetRoomResponse.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Dtos\\MeetRoomResponse.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Dtos\\MeetRoomResponse.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Dtos\\MeetRoomResponse.cs",
+              "RelativeToolTip": "MeetingsBE\\Dtos\\MeetRoomResponse.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T11:04:45.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "MeetingDbContext.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\MeetingDbContext.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\MeetingDbContext.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\MeetingDbContext.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\MeetingDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T15:55:24.405Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Meeting.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\Meeting.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\Meeting.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\Meeting.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\Meeting.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAQwJUAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T15:55:23.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UpdateAdmissionRequest.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Dtos\\UpdateAdmissionRequest.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Dtos\\UpdateAdmissionRequest.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Dtos\\UpdateAdmissionRequest.cs",
+              "RelativeToolTip": "MeetingsBE\\Dtos\\UpdateAdmissionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T16:28:16.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "MeetService.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\phong_hop\\MeetService.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Service\\phong_hop\\MeetService.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Service\\phong_hop\\MeetService.cs",
+              "RelativeToolTip": "MeetingsBE\\Service\\phong_hop\\MeetService.cs",
+              "ViewState": "AgIAAO0AAAAAAAAAAAAYwOEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-10T08:24:01.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "MeetingDailyRoom.cs",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\MeetingDailyRoom.cs",
+              "RelativeDocumentMoniker": "MeetingsBE\\Models\\MeetingDailyRoom.cs",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Models\\MeetingDailyRoom.cs",
+              "RelativeToolTip": "MeetingsBE\\Models\\MeetingDailyRoom.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-08T09:33:45.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MeetingsBE\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Tecapro_Project\\BE\\MeetingsBE\\MeetingsBE\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MeetingsBE\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-08T11:15:00.718Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
