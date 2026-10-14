@@ -91,6 +91,7 @@ function MeetRoom({ code }: { code: string }) {
         joinCode: room.joinCode,
         isOwner: joined.isOwner,
         requireApproval: joined.requireApproval ?? room.requireApproval ?? false,
+        isLocked: joined.isLocked ?? room.isLocked ?? false,
       },
     })
   }

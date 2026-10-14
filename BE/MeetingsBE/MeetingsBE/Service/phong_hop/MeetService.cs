@@ -101,6 +101,9 @@ namespace MeetingsBE.Service
             if (meeting == null)
                 return new(MeetError.NotFound);
 
+            if (meeting.IsEnded)
+                return new(MeetError.Ended, Message: "Cuộc họp này đã kết thúc.");
+
             return new(
                 MeetError.None,
                 new MeetingInfoResponse
@@ -109,7 +112,8 @@ namespace MeetingsBE.Service
                     Title = meeting.Title,
                     JoinCode = code,
                     IsOwner = meeting.OwnerId == userId,
-                    RequireApproval = meeting.RequiresApproval
+                    RequireApproval = meeting.RequiresApproval,
+                    IsLocked = meeting.IsLocked
                 });
         }
 
@@ -132,7 +136,14 @@ namespace MeetingsBE.Service
             if (meeting == null || meeting.DailyRoom == null)
                 return new(MeetError.NotFound);
 
+            if (meeting.IsEnded)
+                return new(MeetError.Ended, Message: "Cuộc họp này đã kết thúc.");
+
             var isOwner = meeting.OwnerId == userId;
+
+            // Phòng đã khoá thì chỉ chủ phòng vào lại được.
+            if (meeting.IsLocked && !isOwner)
+                return new(MeetError.Forbidden, Message: "Chủ phòng đã khoá cuộc họp, không vào thêm được.");
 
             if (meeting.RequiresApproval && !isOwner)
             {
@@ -144,7 +155,8 @@ namespace MeetingsBE.Service
                         IsOwner = false,
                         RequireApproval = true,
                         RoomUrl = meeting.DailyRoom.DailyRoomUrl,
-                        MeetingToken = null
+                        MeetingToken = null,
+                        IsLocked = meeting.IsLocked
                     });
             }
 
@@ -183,7 +195,8 @@ namespace MeetingsBE.Service
                     IsOwner = isOwner,
                     RequireApproval = meeting.RequiresApproval,
                     RoomUrl = meeting.DailyRoom.DailyRoomUrl,
-                    MeetingToken = tokenResponse.Token
+                    MeetingToken = tokenResponse.Token,
+                    IsLocked = meeting.IsLocked
                 });
         }
 
@@ -200,6 +213,9 @@ namespace MeetingsBE.Service
 
             if (meeting.OwnerId != userId)
                 return new(MeetError.Forbidden, Message: "Chỉ chủ phòng mới đổi được chế độ duyệt.");
+
+            if (meeting.IsEnded)
+                return new(MeetError.Ended, Message: "Cuộc họp này đã kết thúc.");
 
             if (requireApproval)
             {
@@ -222,6 +238,86 @@ namespace MeetingsBE.Service
             return new(
                 MeetError.None,
                 new AdmissionResponse { RequireApproval = meeting.RequiresApproval });
+        }
+
+        public async Task<MeetResult<LockResponse>> SetLockAsync(long userId, string joinCode, bool locked, CancellationToken ct)
+        {
+            var code = joinCode.Trim().ToUpperInvariant();
+
+            var meeting = await _db.Meetings
+                .FirstOrDefaultAsync(m => m.JoinCode == code && m.DailyRoom != null, ct);
+
+            if (meeting == null)
+                return new(MeetError.NotFound);
+
+            if (meeting.OwnerId != userId)
+                return new(MeetError.Forbidden, Message: "Chỉ chủ phòng mới khoá được cuộc họp.");
+
+            if (meeting.IsEnded)
+                return new(MeetError.Ended, Message: "Cuộc họp này đã kết thúc.");
+
+            meeting.SetLocked(locked, DateTime.UtcNow);
+            await _db.SaveChangesAsync(ct);
+
+            return new(
+                MeetError.None,
+                new LockResponse { IsLocked = meeting.IsLocked });
+        }
+
+        // Kết thúc cho mọi người: đánh dấu ended trong DB rồi xoá room bên Daily
+        // (Daily xoá room là đẩy hết người đang ở trong ra).
+        public async Task<MeetResult<MeetingInfoResponse>> EndAsync(long userId, string joinCode, CancellationToken ct)
+        {
+            var code = joinCode.Trim().ToUpperInvariant();
+
+            var meeting = await _db.Meetings
+                .Include(m => m.DailyRoom)
+                .FirstOrDefaultAsync(m => m.JoinCode == code, ct);
+
+            if (meeting == null || meeting.DailyRoom == null)
+                return new(MeetError.NotFound);
+
+            if (meeting.OwnerId != userId)
+                return new(MeetError.Forbidden, Message: "Chỉ chủ phòng mới kết thúc được cuộc họp.");
+
+            if (!meeting.IsEnded)
+            {
+                meeting.End(DateTime.UtcNow);
+                await _db.SaveChangesAsync(ct);
+            }
+
+            // DB đã ghi ended nên không ai lấy được token mới nữa.
+            // Xoá room lỗi thì thôi, FE chủ phòng cũng đã eject mọi người rồi.
+            try
+            {
+                await DeleteRoomAsync(meeting.DailyRoom.DailyRoomName, ct);
+            }
+            catch (HttpRequestException)
+            {
+            }
+
+            return new(
+                MeetError.None,
+                new MeetingInfoResponse
+                {
+                    MeetingId = meeting.Id,
+                    Title = meeting.Title,
+                    JoinCode = code,
+                    IsOwner = true,
+                    RequireApproval = meeting.RequiresApproval,
+                    IsLocked = meeting.IsLocked
+                });
+        }
+
+        private async Task DeleteRoomAsync(string roomName, CancellationToken ct)
+        {
+            using var response = await _http.DeleteAsync($"rooms/{roomName}", ct);
+
+            // 404 = room đã bị xoá / hết hạn trước đó, coi như xong.
+            if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                return;
+
+            response.EnsureSuccessStatusCode();
         }
 
         private async Task<DailyRoomResponse> CreateRoomAsync(string roomName, CancellationToken ct)

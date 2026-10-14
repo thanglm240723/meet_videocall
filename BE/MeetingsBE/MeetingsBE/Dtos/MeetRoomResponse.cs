@@ -50,6 +50,8 @@ public sealed class MeetingInfoResponse
     public bool IsOwner { get; set; }
 
     public bool RequireApproval { get; set; }
+
+    public bool IsLocked { get; set; }
 }
 
 public sealed class JoinMeetRoomResponse
@@ -62,9 +64,16 @@ public sealed class JoinMeetRoomResponse
     public string RoomUrl { get; set; } = null!;
 
     public string? MeetingToken { get; set; }
+
+    public bool IsLocked { get; set; }
 }
 
 public sealed class AdmissionResponse
 {
     public bool RequireApproval { get; set; }
+}
+
+public sealed class LockResponse
+{
+    public bool IsLocked { get; set; }
 }

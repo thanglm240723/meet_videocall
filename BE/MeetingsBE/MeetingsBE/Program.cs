@@ -8,6 +8,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using System.Net.Http.Headers;
+// PostgreSQL: giữ cách lưu DateTime giống SQL Server (timestamp không múi giờ),
+// vì code đang tự SpecifyKind(Utc) khi đọc ra.
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 var builder = WebApplication.CreateBuilder(args);
 
 var dailyApiKey = builder.Configuration["Daily:ApiKey"];
@@ -24,7 +28,7 @@ builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddDbContext<MeetingDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 //JWT Authentication
 builder.Services
     .AddAuthentication("Bearer")
@@ -99,6 +103,12 @@ builder.Services.AddAuthorizationBuilder()
     .SetFallbackPolicy(requireAuthPolicy);
 
 var app = builder.Build();
+
+// Tự tạo database + bảng nếu chưa có (project chưa dùng migrations).
+using (var scope = app.Services.CreateScope())
+{
+    scope.ServiceProvider.GetRequiredService<MeetingDbContext>().Database.EnsureCreated();
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -1,4 +1,8 @@
-import type { DailyParticipant, DailyTrackState } from '@daily-co/daily-js'
+import type {
+  DailyParticipant,
+  DailyParticipantPermissionsCanSendValues,
+  DailyTrackState,
+} from '@daily-co/daily-js'
 
 export function isOn(track?: DailyTrackState) {
   return !!track && track.state !== 'off' && track.state !== 'blocked'
@@ -22,4 +26,21 @@ export function formatDuration(ms: number) {
   const ss = String(s).padStart(2, '0')
 
   return h > 0 ? `${h}:${mm}:${ss}` : `${mm}:${ss}`
+}
+
+// Quyền gửi media do chủ phòng cấp; mặc định Daily cho gửi tất cả (canSend = true).
+export function canSend(p: DailyParticipant | undefined, kind: DailyParticipantPermissionsCanSendValues) {
+  const value = p?.permissions?.canSend
+
+  if (value === undefined || value === true) return true
+  if (value === false) return false
+
+  return value.has(kind)
+}
+
+// Giơ tay lưu trong userData của Daily nên người vào sau vẫn thấy.
+export function handRaisedAt(p: DailyParticipant) {
+  const data = p.userData as { handRaisedAt?: unknown } | undefined
+
+  return typeof data?.handRaisedAt === 'number' ? data.handRaisedAt : null
 }

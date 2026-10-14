@@ -15,6 +15,7 @@ export type MeetingInfo = {
   joinCode: string
   isOwner: boolean
   requireApproval?: boolean
+  isLocked?: boolean
 }
 
 export type JoinedMeeting = {
@@ -23,6 +24,7 @@ export type JoinedMeeting = {
   roomUrl: string
   meetingToken: string | null
   requireApproval?: boolean
+  isLocked?: boolean
 }
 
 export type CreatedCall = {
@@ -60,6 +62,19 @@ export function setMeetingAdmission(
     { requireApproval },
     signal,
   )
+}
+
+export function setMeetingLock(joinCode: string, locked: boolean, signal?: AbortSignal) {
+  return put<{ isLocked: boolean }>(
+    `/api/meetrooms/${encodeURIComponent(joinCode)}/lock`,
+    { locked },
+    signal,
+  )
+}
+
+// Chủ phòng kết thúc cho tất cả: BE ghi ended + xoá room Daily.
+export function endMeeting(joinCode: string, signal?: AbortSignal) {
+  return post<MeetingInfo>(`/api/meetrooms/${encodeURIComponent(joinCode)}/end`, undefined, signal)
 }
 
 async function request<T>(

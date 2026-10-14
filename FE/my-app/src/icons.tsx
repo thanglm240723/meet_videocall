@@ -187,3 +187,70 @@ export const SendIcon = (p: IconProps) => (
     <polygon points="22 2 15 22 11 13 2 9 22 2" />
   </Svg>
 )
+
+export const HandIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M18 11V6a2 2 0 0 0-4 0v5" />
+    <path d="M14 10V4a2 2 0 0 0-4 0v6" />
+    <path d="M10 10.5V6a2 2 0 0 0-4 0v8" />
+    <path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.9-5.9-2.4L3.4 16a2 2 0 0 1 2.9-2.8L8 15" />
+  </Svg>
+)
+
+export const SettingsIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <circle cx="12" cy="12" r="3" />
+    <path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" />
+  </Svg>
+)
+
+export const GridIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <rect x="3" y="3" width="7" height="7" rx="1.5" />
+    <rect x="14" y="3" width="7" height="7" rx="1.5" />
+    <rect x="3" y="14" width="7" height="7" rx="1.5" />
+    <rect x="14" y="14" width="7" height="7" rx="1.5" />
+  </Svg>
+)
+
+export const SpotlightIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <rect x="3" y="3" width="18" height="12" rx="2" />
+    <rect x="3" y="18" width="5" height="3" rx="1" />
+    <rect x="9.5" y="18" width="5" height="3" rx="1" />
+    <rect x="16" y="18" width="5" height="3" rx="1" />
+  </Svg>
+)
+
+export const LayoutIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <rect x="3" y="4" width="12" height="16" rx="2" />
+    <rect x="17" y="4" width="4" height="7" rx="1.5" />
+    <rect x="17" y="13" width="4" height="7" rx="1.5" />
+  </Svg>
+)
+
+export const PushPinIcon = ({ off, ...p }: IconProps & { off?: boolean }) => (
+  <Svg {...p}>
+    <path d="M9 4h6l-1 6 3 3H7l3-3z" />
+    <path d="M12 13v8" />
+    {off && <path d="M3 3l18 18" />}
+  </Svg>
+)
+
+export const ExpandIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <path d="M8 3H5a2 2 0 0 0-2 2v3" />
+    <path d="M21 8V5a2 2 0 0 0-2-2h-3" />
+    <path d="M3 16v3a2 2 0 0 0 2 2h3" />
+    <path d="M16 21h3a2 2 0 0 0 2-2v-3" />
+  </Svg>
+)
+
+export const UserRemoveIcon = (p: IconProps) => (
+  <Svg {...p}>
+    <circle cx="9" cy="8" r="4" />
+    <path d="M2 21a7 7 0 0 1 14 0" />
+    <path d="M17 11h5" />
+  </Svg>
+)

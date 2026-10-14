@@ -61,12 +61,20 @@ public partial class Meeting
     public const string StatusScheduled = "scheduled";
     public const string StatusCancelled = "cancelled";
 
+    // Phòng họp online: khoá = không cho ai vào thêm, ended = chủ phòng đã kết thúc cho mọi người.
+    public const string StatusLocked = "locked";
+    public const string StatusEnded = "ended";
+
     //  auto = vào thẳng, manual = chủ phòng phải duyệt.
     public const string AdmissionAuto = "auto";
     public const string AdmissionManual = "manual";
 
    
     public bool IsCancelled => string.Equals(Status, StatusCancelled, StringComparison.OrdinalIgnoreCase);
+
+    public bool IsLocked => string.Equals(Status, StatusLocked, StringComparison.OrdinalIgnoreCase);
+
+    public bool IsEnded => string.Equals(Status, StatusEnded, StringComparison.OrdinalIgnoreCase);
 
     public bool RequiresApproval => string.Equals(AdmissionMode, AdmissionManual, StringComparison.OrdinalIgnoreCase);
 
@@ -154,6 +162,29 @@ public partial class Meeting
             throw new InvalidOperationException("Chỉ phòng họp online mới có chế độ duyệt.");
 
         AdmissionMode = required ? AdmissionManual : AdmissionAuto;
+        UpdatedAt = now;
+    }
+
+    public void SetLocked(bool locked, DateTime now)
+    {
+        if (!string.Equals(MeetingType, TypeOnline, StringComparison.OrdinalIgnoreCase))
+            throw new InvalidOperationException("Chỉ phòng họp online mới khoá được.");
+
+        if (IsEnded)
+            throw new InvalidOperationException("Cuộc họp đã kết thúc.");
+
+        // Phòng tạo nhanh đang để status = scheduled, mở khoá thì trả về như cũ.
+        Status = locked ? StatusLocked : StatusScheduled;
+        UpdatedAt = now;
+    }
+
+    public void End(DateTime now)
+    {
+        if (IsEnded)
+            return;
+
+        Status = StatusEnded;
+        EndedAt = now;
         UpdatedAt = now;
     }
 }

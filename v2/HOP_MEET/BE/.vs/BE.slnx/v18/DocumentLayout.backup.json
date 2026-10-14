@@ -1,0 +1,277 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Code\\HOP_MEET\\BE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\hub\\cuocgoihub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\hub\\cuocgoihub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\controllers\\webrtccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\controllers\\webrtccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\hub\\meethub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\hub\\meethub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\hub\\roomregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\hub\\roomregistry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\model\\meetingmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\model\\meetingmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\hub\\peer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\hub\\peer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\service\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\service\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\service\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\service\\ijwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\dtos\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\dtos\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\service\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|d:\\code\\hop_meet\\be\\be\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB6A4788-9AE9-B8B1-CF86-15FDCB6550FE}|BE\\BE.csproj|solutionrelative:be\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CuocGoiHub.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\CuocGoiHub.cs",
+              "RelativeDocumentMoniker": "BE\\Hub\\CuocGoiHub.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\CuocGoiHub.cs",
+              "RelativeToolTip": "BE\\Hub\\CuocGoiHub.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAwwAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-13T17:35:41.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebRtcController.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Controllers\\WebRtcController.cs",
+              "RelativeDocumentMoniker": "BE\\Controllers\\WebRtcController.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Controllers\\WebRtcController.cs",
+              "RelativeToolTip": "BE\\Controllers\\WebRtcController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAiwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T15:10:32.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MeetingMember.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Model\\MeetingMember.cs",
+              "RelativeDocumentMoniker": "BE\\Model\\MeetingMember.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Model\\MeetingMember.cs",
+              "RelativeToolTip": "BE\\Model\\MeetingMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T15:04:33.844Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeetHub.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\MeetHub.cs",
+              "RelativeDocumentMoniker": "BE\\Hub\\MeetHub.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\MeetHub.cs",
+              "RelativeToolTip": "BE\\Hub\\MeetHub.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAUwCMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T14:52:06.326Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RoomRegistry.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\RoomRegistry.cs",
+              "RelativeDocumentMoniker": "BE\\Hub\\RoomRegistry.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\RoomRegistry.cs",
+              "RelativeToolTip": "BE\\Hub\\RoomRegistry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T14:51:50.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Peer.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\Peer.cs",
+              "RelativeDocumentMoniker": "BE\\Hub\\Peer.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Hub\\Peer.cs",
+              "RelativeToolTip": "BE\\Hub\\Peer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-12T14:51:42.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Program.cs",
+              "RelativeDocumentMoniker": "BE\\Program.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Program.cs",
+              "RelativeToolTip": "BE\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAcwB8AAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T09:23:08.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "BE\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "BE\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAMwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T09:07:22.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IJwtService.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\IJwtService.cs",
+              "RelativeDocumentMoniker": "BE\\Service\\IJwtService.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\IJwtService.cs",
+              "RelativeToolTip": "BE\\Service\\IJwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T10:11:24.302Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Dtos\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "BE\\Dtos\\RegisterRequest.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Dtos\\RegisterRequest.cs",
+              "RelativeToolTip": "BE\\Dtos\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T09:18:54.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "BE\\Service\\AuthService.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\AuthService.cs",
+              "RelativeToolTip": "BE\\Service\\AuthService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwvxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T09:07:05.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\IAuthService.cs",
+              "RelativeDocumentMoniker": "BE\\Service\\IAuthService.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\IAuthService.cs",
+              "RelativeToolTip": "BE\\Service\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T09:06:56.764Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Dtos\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "BE\\Dtos\\LoginRequest.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Dtos\\LoginRequest.cs",
+              "RelativeToolTip": "BE\\Dtos\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T10:02:38.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DbContext.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Data\\DbContext.cs",
+              "RelativeDocumentMoniker": "BE\\Data\\DbContext.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Data\\DbContext.cs",
+              "RelativeToolTip": "BE\\Data\\DbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T10:08:42.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\JwtService.cs",
+              "RelativeDocumentMoniker": "BE\\Service\\JwtService.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Service\\JwtService.cs",
+              "RelativeToolTip": "BE\\Service\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T10:11:34.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Code\\HOP_MEET\\BE\\BE\\Model\\User.cs",
+              "RelativeDocumentMoniker": "BE\\Model\\User.cs",
+              "ToolTip": "D:\\Code\\HOP_MEET\\BE\\BE\\Model\\User.cs",
+              "RelativeToolTip": "BE\\Model\\User.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAwwEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T09:06:00.899Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

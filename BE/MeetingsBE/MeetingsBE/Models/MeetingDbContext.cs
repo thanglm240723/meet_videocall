@@ -44,7 +44,7 @@ public partial class MeetingDbContext : DbContext
     {
         modelBuilder.Entity<MeetingDailyRoom>(entity =>
         {
-            entity.ToTable("MeetingDailyRooms", "dbo");
+            entity.ToTable("MeetingDailyRooms");
 
             entity.HasKey(e => e.MeetingId)
                 .HasName("PK_MeetingDailyRooms");
@@ -67,7 +67,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.CreatedAt)
                 .HasColumnName("created_at")
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())");
+                .HasDefaultValueSql("(now() at time zone 'utc')");
 
             entity.HasIndex(e => e.DailyRoomName)
                 .HasDatabaseName("UX_MeetingDailyRooms_Name")
@@ -81,7 +81,7 @@ public partial class MeetingDbContext : DbContext
         });
         modelBuilder.Entity<CallDailyRoom>(entity =>
         {
-            entity.ToTable("CallDailyRooms", "dbo");
+            entity.ToTable("CallDailyRooms");
 
             entity.HasKey(e => e.CallId).HasName("PK_CallDailyRooms");
 
@@ -127,7 +127,7 @@ public partial class MeetingDbContext : DbContext
                 .HasColumnName("call_type");
             entity.Property(e => e.CreatedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_Call_CreatedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("created_at");
             entity.Property(e => e.EndReason)
                 .HasMaxLength(30)
@@ -143,7 +143,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.Status)
                 .HasMaxLength(10)
                 .IsUnicode(false)
-                .HasDefaultValue("ringing", "DF_Call_Status")
+                .HasDefaultValue("ringing")
                 .HasColumnName("status");
 
             entity.HasOne(d => d.Owner).WithMany(p => p.Calls)
@@ -160,13 +160,13 @@ public partial class MeetingDbContext : DbContext
 
             entity.HasIndex(e => e.CallMemberId, "UX_CallJoinLog_Open")
                 .IsUnique()
-                .HasFilter("([left_at] IS NULL)");
+                .HasFilter("(left_at IS NULL)");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CallMemberId).HasColumnName("call_member_id");
             entity.Property(e => e.JoinedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_CallJoinLog_JoinedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("joined_at");
             entity.Property(e => e.LeftAt)
                 .HasPrecision(3)
@@ -188,7 +188,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.CallMemberId).HasColumnName("call_member_id");
             entity.Property(e => e.RequestedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_CallJoinReq_RequestedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("requested_at");
 
             entity.HasOne(d => d.CallMember).WithOne(p => p.CallJoinReq)
@@ -201,17 +201,17 @@ public partial class MeetingDbContext : DbContext
         {
             entity.ToTable("Call_member");
 
-            entity.HasIndex(e => new { e.UserId, e.InvitedAt }, "IX_CallMember_UserHistory").HasFilter("([user_id] IS NOT NULL)");
+            entity.HasIndex(e => new { e.UserId, e.InvitedAt }, "IX_CallMember_UserHistory").HasFilter("(user_id IS NOT NULL)");
 
             entity.HasIndex(e => new { e.CallId, e.Email }, "UQ_CallMember_CallEmail").IsUnique();
 
             entity.HasIndex(e => new { e.CallId, e.UserId }, "UX_CallMember_CallUser")
                 .IsUnique()
-                .HasFilter("([user_id] IS NOT NULL)");
+                .HasFilter("(user_id IS NOT NULL)");
 
             entity.HasIndex(e => e.JoinTokenHash, "UX_CallMember_Token")
                 .IsUnique()
-                .HasFilter("([join_token_hash] IS NOT NULL)");
+                .HasFilter("(join_token_hash IS NOT NULL)");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CallId).HasColumnName("call_id");
@@ -222,7 +222,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.DeliveryStatus)
                 .HasMaxLength(10)
                 .IsUnicode(false)
-                .HasDefaultValue("pending", "DF_CallMember_Delivery")
+                .HasDefaultValue("pending")
                 .HasColumnName("delivery_status");
             entity.Property(e => e.DisplayName)
                 .HasMaxLength(100)
@@ -232,7 +232,7 @@ public partial class MeetingDbContext : DbContext
                 .HasColumnName("email");
             entity.Property(e => e.InvitedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_CallMember_InvitedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("invited_at");
             entity.Property(e => e.JoinTokenHash)
                 .HasMaxLength(32)
@@ -244,12 +244,12 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.ResponseStatus)
                 .HasMaxLength(15)
                 .IsUnicode(false)
-                .HasDefaultValue("pending", "DF_CallMember_Response")
+                .HasDefaultValue("pending")
                 .HasColumnName("response_status");
             entity.Property(e => e.Result)
                 .HasMaxLength(20)
                 .IsUnicode(false)
-                .HasDefaultValue("pending", "DF_CallMember_Result")
+                .HasDefaultValue("pending")
                 .HasColumnName("result");
             entity.Property(e => e.RingExpiresAt)
                 .HasPrecision(3)
@@ -274,7 +274,7 @@ public partial class MeetingDbContext : DbContext
 
             entity.HasIndex(e => e.JoinCode, "UX_Meetings_JoinCode")
                 .IsUnique()
-                .HasFilter("([join_code] IS NOT NULL)");
+                .HasFilter("(join_code IS NOT NULL)");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.AdmissionMode)
@@ -283,7 +283,7 @@ public partial class MeetingDbContext : DbContext
                 .HasColumnName("admission_mode");
             entity.Property(e => e.CreatedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_Meetings_CreatedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("created_at");
             entity.Property(e => e.CreationMode)
                 .HasMaxLength(10)
@@ -324,7 +324,7 @@ public partial class MeetingDbContext : DbContext
                 .HasColumnName("title");
             entity.Property(e => e.UpdatedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_Meetings_UpdatedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("updated_at");
 
             entity.HasOne(d => d.Owner).WithMany(p => p.Meetings)
@@ -342,12 +342,12 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CreatedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_Invites_CreatedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("created_at");
             entity.Property(e => e.DeliveryStatus)
                 .HasMaxLength(10)
                 .IsUnicode(false)
-                .HasDefaultValue("pending", "DF_Invites_Delivery")
+                .HasDefaultValue("pending")
                 .HasColumnName("delivery_status");
             entity.Property(e => e.Email)
                 .HasMaxLength(320)
@@ -359,7 +359,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.Response)
                 .HasMaxLength(10)
                 .IsUnicode(false)
-                .HasDefaultValue("pending", "DF_Invites_Response")
+                .HasDefaultValue("pending")
                 .HasColumnName("response");
             entity.Property(e => e.RespondedAt)
                 .HasPrecision(3)
@@ -386,12 +386,12 @@ public partial class MeetingDbContext : DbContext
 
             entity.HasIndex(e => e.MemberId, "UX_JoinLog_Open")
                 .IsUnique()
-                .HasFilter("([left_at] IS NULL)");
+                .HasFilter("(left_at IS NULL)");
 
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.JoinedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_JoinLog_JoinedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("joined_at");
             entity.Property(e => e.LeftAt)
                 .HasPrecision(3)
@@ -414,7 +414,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.MeetingId).HasColumnName("meeting_id");
             entity.Property(e => e.RequestedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_JoinReq_RequestedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("requested_at");
             entity.Property(e => e.UserId).HasColumnName("user_id");
 
@@ -440,7 +440,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CreatedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_Member_CreatedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("created_at");
             entity.Property(e => e.DisplayName)
                 .HasMaxLength(100)
@@ -474,7 +474,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.MemberId).HasColumnName("member_id");
             entity.Property(e => e.SentAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_Message_SentAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("sent_at");
 
             entity.HasOne(d => d.Meeting).WithMany(p => p.MeetingMessages)
@@ -498,7 +498,7 @@ public partial class MeetingDbContext : DbContext
             entity.Property(e => e.Id).HasColumnName("id");
             entity.Property(e => e.CreatedAt)
                 .HasPrecision(3)
-                .HasDefaultValueSql("(sysutcdatetime())", "DF_User_CreatedAt")
+                .HasDefaultValueSql("(now() at time zone 'utc')")
                 .HasColumnName("created_at");
             entity.Property(e => e.DisplayName)
                 .HasMaxLength(100)

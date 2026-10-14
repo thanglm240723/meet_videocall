@@ -2,7 +2,16 @@ using MeetingsBE.Dtos;
 
 namespace MeetingsBE.Service;
 
-
+public enum CallError
+{
+    None,
+    InvalidRequest,
+    Unauthorized,
+    NotFound,
+    Forbidden,
+    Gone,
+    DailyUnavailable
+}
 
 public sealed record CallResult<T>(CallError Error, T? Data = null, string? Message = null) where T : class;
 
@@ -27,15 +36,4 @@ public interface ICallService
     Task ExpireRingsAsync(DateTime now, CancellationToken ct);
 
     Task HandleOfflineAsync(long userId, CancellationToken ct);
-
-    public enum CallError
-    {
-        None,
-        InvalidRequest,
-        Unauthorized,
-        NotFound,
-        Forbidden,
-        Gone,
-        DailyUnavailable
-    }
 }

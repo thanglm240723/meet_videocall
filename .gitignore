@@ -1,0 +1,45 @@
+# === .NET & Visual Studio ===
+bin/
+obj/
+**/bin/
+**/obj/
+.vs/
+**/.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# === Environment & Secrets ===
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# === Frontend / Node ===
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+dist-ssr/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Deployment & Build Output ===
+deploy/out/
+**/deploy/out/
+
+# === Temporary & Editor files ===
+*.bak
+*.tmp
+*.sw?
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
